@@ -37,7 +37,7 @@ const rootFolder = path.basename(path.resolve());
 
 // paths
 const srcFolder = './src';
-const buildFolder = './app';
+const buildFolder = './templates';
 const paths = {
   srcSvg: `${srcFolder}/img/svg/**.svg`,
   srcImgFolder: `${srcFolder}/img`,
@@ -285,7 +285,7 @@ const cache = () => {
 };
 
 const rewrite = () => {
-  const manifest = readFileSync('app/rev.json');
+  const manifest = readFileSync('templates/rev.json');
   src(`${paths.buildCssFolder}/*.css`)
     .pipe(revRewrite({
       manifest
