@@ -94,9 +94,12 @@ h1, h2, h3, h4, h5, h6, p {
   font-family: var(--font-family, sans-serif);
   font-size: var(--font-size);
   -webkit-text-size-adjust: 100%;
+  background-color: var(--bg-color);
+  color: var(--main-title-color);
 }
 
 .page__body {
+  position: relative;
   margin: 0;
   min-width: 320px;
   min-height: 100%;
@@ -190,5 +193,49 @@ a {
 
 .page--ios .dis-scroll {
   position: relative;
+}
+
+.header {
+  position: absolute;
+  top: 28px;
+  left: 50%;
+  width: 100%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+.header__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin: 0 15px;
+}
+
+.nav {
+  width: 65%;
+}
+.nav__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+.nav__link {
+  padding-bottom: 3px;
+  color: var(--main-title-color);
+}
+.nav__link:hover {
+  border-bottom: 4px solid currentColor;
+  -webkit-transition: border-bottom 0.2s ease-in-out;
+  -o-transition: border-bottom 0.2s ease-in-out;
+  transition: border-bottom 0.2s ease-in-out;
 }
 /*# sourceMappingURL=main.css.map */
