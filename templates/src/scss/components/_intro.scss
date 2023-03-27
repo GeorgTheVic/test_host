@@ -3,15 +3,13 @@
   min-height: 965px;
 
   &__inner {
+    min-height: 965px;
+    position: relative;
     display: flex;
-    margin: 150px auto;
-  }
-
-  &__left {
-    display: flex;
-    flex: 1;
+    margin: 90px auto;
     flex-direction: column;
     justify-content: center;
+    flex: 1;
   }
 
   &__title {
@@ -37,15 +35,18 @@
     }
   }
 
-  &__right {
-    flex: 1;
-  }
-
   &__text {
     margin-bottom: 20px;
     font-size: 20px;
     line-height: 24px;
     letter-spacing: 0.5px;
     color: rgba(239, 237, 232, 0.65);
+  }
+
+  &__img {
+    position: absolute;
+    top: 100px;
+    right: -10%;
+    z-index: -5;
   }
 }
