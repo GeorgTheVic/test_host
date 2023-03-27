@@ -15,10 +15,11 @@ h1, h2, h3, h4, h5, h6, p {
 .page {
   height: 100%;
   font-family: var(--font-family, sans-serif);
+  font-weight: 400;
   font-size: var(--font-size);
   -webkit-text-size-adjust: 100%;
-  background-color: var(--bg-color);
   color: var(--main-title-color);
+  background-color: var(--bg-color);
 }
 
 .page__body {

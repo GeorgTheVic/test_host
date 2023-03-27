@@ -1,0 +1,51 @@
+.intro {
+  height: 100vh;
+  min-height: 965px;
+
+  &__inner {
+    display: flex;
+    margin: 150px auto;
+  }
+
+  &__left {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  &__title {
+    margin-bottom: 40px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 90px;
+    line-height: 85px;
+
+    letter-spacing: -2px;
+    text-transform: uppercase;
+
+    &-thin {
+      font-weight: 400;
+      font-size: 70px;
+      line-height: 70px;
+    }
+
+    &-bold {
+      font-weight: 700;
+      font-size: 110px;
+      line-height: 100%;
+    }
+  }
+
+  &__right {
+    flex: 1;
+  }
+
+  &__text {
+    margin-bottom: 20px;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+    color: rgba(239, 237, 232, 0.65);
+  }
+}
