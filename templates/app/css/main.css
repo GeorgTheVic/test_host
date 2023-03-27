@@ -273,6 +273,27 @@ a {
   z-index: -5;
 }
 
+.profit {
+  margin: 100px auto;
+  width: 100%;
+  height: 700px;
+}
+.profit__title {
+  margin-bottom: 24px;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 50px;
+  letter-spacing: 0.3px;
+  text-align: center;
+}
+.profit__subtitle {
+  font-size: 30px;
+  line-height: 24px;
+  letter-spacing: 0.5px;
+  color: rgba(239, 237, 232, 0.65);
+  text-align: center;
+}
+
 .nav {
   width: 65%;
 }
