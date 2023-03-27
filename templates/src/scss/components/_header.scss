@@ -1,0 +1,15 @@
+.header {
+  position: absolute;
+  top: 28px;
+  left: 50%;
+  width: 100%;
+  transform: translateX(-50%);
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 15px;
+  }
+
+  
+}

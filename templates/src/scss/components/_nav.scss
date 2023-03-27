@@ -1,0 +1,19 @@
+.nav {
+  width: 65%;
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__link {
+    padding-bottom: 3px;
+    color: var(--main-title-color);
+
+    &:hover {
+      border-bottom: 4px solid currentColor;
+
+      transition: border-bottom .2s ease-in-out;
+    }
+  }
+}

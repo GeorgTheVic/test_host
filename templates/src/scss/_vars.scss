@@ -2,11 +2,20 @@
 // colors
 :root {
   // base
-  --font-family: "Open Sans", sans-serif;
-  --content-width: 1170px;
+  --font-family: "Inter", sans-serif;
+  --font-size: 25px;
+  --content-width: 1200px;
+  --content-fluid-width: 1270px;
   --container-offset: 15px;
   --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
+  --container-fluid-width: calc(var(--content-fluid-width) + (var(--container-offset) * 2));
 
   // colors
   --light-color: #fff;
+  --dark-color: #000;
+  --bg-color: #171717;
+  --main-title-color: #FAFAF9;
+  --small-text-color: #EFEDE8;
+  --card-color: #323443;
+  --card-darc-color: #232532;
 }
