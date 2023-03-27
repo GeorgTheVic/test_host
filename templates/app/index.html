@@ -8,7 +8,12 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <meta name="theme-color" content="#111111">
   <title>Champion Gym Investment</title>
-  <link rel="preload" href="fonts/MullerRegular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/Inter-Regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/Inter-Medium.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/Inter-SemiBold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/Inter-Bold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/MontserratRegular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/MontserratExtraBold.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="css/vendor.css">
   <link rel="stylesheet" href="css/main.css">
   <script defer src="js/main.js"></script>
@@ -17,7 +22,24 @@
 <body class="page__body">
   <div class="site-container">
     <header class="header">
-  <div class="container"></div>
+  <div class="container-fluid">
+    <div class="header__inner">
+      <div class="header__logo">
+        <picture>
+          <source srcset="img/Logo.avif" type="image/avif">
+          <source srcset="img/Logo.webp" type="image/webp">
+          <img loading="lazy" src="img/Logo.png" class="header__img" width="94" height="96" alt="Логотип">
+        </picture>
+      </div>
+      <nav class="header__nav" title="Main menu">
+        <ul class="list-reset nav__list">
+          <li class="nav__item"><a href="#" class="nav__link"></a></li>
+          <li class="nav__item"><a href="#" class="nav__link"></a></li>
+          <li class="nav__item"><a href="#" class="nav__link"></a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
 </header>
 
     <main class="main">
