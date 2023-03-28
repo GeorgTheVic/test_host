@@ -1,0 +1,25 @@
+.graph-modal {
+
+
+  // &__container {
+
+  // }
+
+  &__content {
+    width: 800px;
+    height: 1374px;
+
+    background: #171717;
+    border-radius: 12px;
+  }
+
+  &__header {
+    max-width: 650px;
+    height: 89px;
+    left: 75px;
+    top: 51px;
+
+    background: rgba(230, 83, 60, 0.85);
+    border-radius: 12px;
+  }
+}

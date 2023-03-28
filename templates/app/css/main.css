@@ -509,6 +509,21 @@ a {
   height: 200px;
 }
 
+.graph-modal__content {
+  width: 800px;
+  height: 1374px;
+  background: #171717;
+  border-radius: 12px;
+}
+.graph-modal__header {
+  max-width: 650px;
+  height: 89px;
+  left: 75px;
+  top: 51px;
+  background: rgba(230, 83, 60, 0.85);
+  border-radius: 12px;
+}
+
 .nav {
   width: 65%;
 }
