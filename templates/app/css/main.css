@@ -274,7 +274,7 @@ a {
 }
 
 .profit {
-  margin: 100px auto;
+  margin: 50px auto;
   width: 100%;
   height: 700px;
 }
@@ -303,7 +303,7 @@ a {
 }
 
 .process {
-  height: 700px;
+  height: 600px;
   width: 100%;
 }
 .process__inner {
@@ -331,10 +331,45 @@ a {
   letter-spacing: 0.3px;
 }
 .process__info {
-  font-size: 40px;
-  line-height: 120%;
+  font-size: 36px;
+  line-height: 150%;
   letter-spacing: 0.3px;
   color: rgba(239, 237, 232, 0.65);
+  text-align: justify;
+}
+
+.investment {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+  height: 400px;
+}
+.investment__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+.investment__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.investment__row:first-child {
+  margin-bottom: 22px;
+}
+.investment__img {
+  margin-right: 32px;
 }
 
 .nav {
