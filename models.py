@@ -6,3 +6,4 @@ db = SQLAlchemy()
 
 class Info(db.Model):
     id = db.Column(db.Integer, primary_key=True)
+    circulation = db.Column("circulation", db.Integer)

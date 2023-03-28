@@ -51,7 +51,7 @@
     <div class="intro__inner">
       <div class="intro__left">
         <h1 class="intro__title">
-          Champion Gym</br>
+          Champion Gym<br>
           <span class="intro__title-thin">
             Набирает
           </span>
@@ -61,7 +61,7 @@
         </h1>
 
         <p class="intro__text">
-          Я Артём Чернов, основатель сети фитнес-клубов Champion Gym.</br>
+          Я Артём Чернов, основатель сети фитнес-клубов Champion Gym.<br>
           Привлекаю инвестиции на открытие ещё трех филиалов в этом году.
         </p>
 
@@ -72,9 +72,9 @@
 
       <div class="intro__right">
         <picture>
-          <source srcset="img/intro_bg_img.avif" type="image/avif">
-          <source srcset="img/intro_bg_img.webp" type="image/webp">
-          <img loading="lazy" src="img/intro_bg_img.png" class="image" width="700" height="690" alt="Артём Чернов">
+          <source srcset="{{ url_for('static', filename='img/intro_bg_img.avif') }}" type="image/avif">
+          <source srcset="{{ url_for('static', filename='img/intro_bg_img.webp') }}" type="image/webp">
+          <img loading="lazy" src="{{ url_for('static', filename='img/intro_bg_img.png') }}" class="image" width="700" height="690" alt="Артём Чернов">
         </picture>
 
         <div class="label label-orange">
@@ -82,7 +82,7 @@
             Оборот за месяц
           </p>
           <p class="label__text-big">
-            45 <span class="label__text-small">млн ₸</span>
+            {{ info.circulation }} <span class="label__text-small">млн ₸</span>
           </p>
         </div>
         <div class="label label-gray">
