@@ -1,0 +1,33 @@
+.profit {
+  display: flex;
+  align-items: center;
+  height: 700px;
+
+  &__inner {
+    display: flex;
+    justify-content: space-around;
+
+    min-width: var(--container-width);
+  }
+
+  &__title {
+    margin-bottom: 24px;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 50px;
+
+    letter-spacing: 0.3px;
+    text-align: center;
+  }
+
+  &__subtitle {
+    margin-bottom: 50px;
+    font-size: 30px;
+    line-height: 24px;
+
+    letter-spacing: 0.5px;
+
+    color: rgba(239, 237, 232, 0.65);
+    text-align: center;
+  }
+}

@@ -1,11 +1,15 @@
 .label {
   border-radius: 12px;
   padding: 25px 18px;
+  position: absolute;
 
   &-orange {
     width: 190px;
     height: 110px;
     background: #EF8964;
+    top: 200px;
+    right: -7%;
+    z-index: -4;
   }
 
   &-gray {
@@ -13,6 +17,9 @@
     height: 96px;
 
     background: #303030;
+    bottom: 250px;
+    right: 23%;
+    z-index: -4;
   }
 
   &__suptext {
@@ -79,6 +86,8 @@
     height: 98px;
 
     background: #7A29DC;
-    border-radius: 12px;
+    bottom: 150px;
+    right: -2%;
+    z-index: -4;
   }
 }

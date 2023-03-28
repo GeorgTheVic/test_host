@@ -7,9 +7,15 @@
 // подключения компонентов страницы
 @import "./components/header";
 @import "./components/intro";
+@import "./components/profit";
+@import "./components/process";
+@import "./components/investment";
+@import "./components/benefit";
+@import "./components/about";
 
 
 //small styles
-@import "./components/_nav";
-@import "./components/_label";
-@import "./components/_btn";
+@import "./components/nav";
+@import "./components/label";
+@import "./components/btn";
+@import "./components/card";

@@ -1,0 +1,39 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  padding: 65px 55px 35px;
+  width: 304px;
+  height: 342px;
+
+  background: #323443;
+  border-radius: 12px;
+
+  text-align: left;
+
+  &-dark {
+    padding: 60px 40px;
+    background-color: #232532;
+  }
+
+  &__title {
+    margin-bottom: 45px;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 100%;
+
+    letter-spacing: 0.5px;
+  }
+
+  &__info {
+    margin-bottom: 35px;
+    line-height: 150%;
+  }
+
+  &__img {
+    align-self: center;
+  }
+
+  &:last-child {
+    padding: 60px 45px;
+  }
+}
