@@ -1,9 +1,9 @@
-.process {
+.benefit {
   height: 600px;
   width: 100%;
   display: flex;
   align-items: center;
-
+  
   &__inner {
     display: flex;
     justify-content: space-between;
@@ -12,8 +12,6 @@
 
   &__left {
     width: 47%;
-
-    align-items: center;
   }
 
   &__right {

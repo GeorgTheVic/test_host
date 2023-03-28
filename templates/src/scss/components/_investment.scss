@@ -4,18 +4,18 @@
   width: 100%;
   height: 400px;
 
-  
+
 
   &__inner {
     display: flex;
     flex-direction: column;
-    
+
   }
 
   &__row {
     display: flex;
     align-items: center;
-    
+
     &:first-child {
       margin-bottom: 22px;
     }
@@ -23,5 +23,15 @@
 
   &__img {
     margin-right: 32px;
+  }
+
+  &__text {
+    font-size: 30px;
+    line-height: 120%;
+
+    letter-spacing: 0.3px;
+
+    color: rgba(239, 237, 232, 0.65);
+
   }
 }
