@@ -1,0 +1,46 @@
+.graph-modal {
+  background-color: #3A3A3A;
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__container {
+    margin: 50px auto;
+    padding: 50px 75px;
+    width: 800px;
+    height: 1600px;
+
+    background-color: var(--bg-color);
+  }
+
+  &__content {
+    padding: 0 50px;
+
+    background: #171717;
+    border-radius: 12px;
+  }
+
+  &__header {
+    margin-bottom: 55px;
+    padding: 29px 27px;
+    max-width: 650px;
+    height: 89px;
+    left: 75px;
+    top: 51px;
+
+    background: rgba(230, 83, 60, 0.85);
+    border-radius: 12px;
+  }
+
+  &__title {
+    font-weight: 600;
+    font-size: 29px;
+    line-height: 100%;
+
+    letter-spacing: 0.03em;
+  }
+}

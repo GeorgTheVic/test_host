@@ -1,0 +1,35 @@
+.form {
+
+  &__caption {
+    margin-bottom: 25px;
+    font-style: normal;
+    font-size: 25px;
+    line-height: 100%;
+
+    letter-spacing: 1px;
+  }
+
+  &__label {
+    margin-bottom: 25px;
+    text-align: left;
+  }
+
+  &__input {
+    margin-bottom: 20px;
+    padding: 20px;
+    width: 565px;
+    height: 80px;
+
+    background: #3A3A3A;
+    border-radius: 12px;
+    &:last-child {
+      margin-bottom: 45px;
+    }
+  }
+
+  &__btn {
+    display: block;
+    margin: 0 auto;
+    align-items: center;
+  }
+}
