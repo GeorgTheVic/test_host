@@ -10,33 +10,22 @@
 
   &__container {
     margin: 50px auto;
-    position: fixed;
-    left: 0;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    z-index: 1000;
+    padding: 50px 75px;
     width: 800px;
-    height: 1374px;
-    overflow-y: auto;
-    overflow-x: hidden;
-    text-align: center;
-    vertical-align: middle;
+    height: 1600px;
 
     background-color: var(--bg-color);
   }
 
   &__content {
-    display: flex;
-    flex-direction: column;
-    // justify-content: center;
-    align-items: center;
+    padding: 0 50px;
 
     background: #171717;
     border-radius: 12px;
   }
 
   &__header {
+    margin-bottom: 55px;
     padding: 29px 27px;
     max-width: 650px;
     height: 89px;
