@@ -1,19 +1,43 @@
 .graph-modal {
+  background-color: #3A3A3A;
 
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 
-  // &__container {
-
-  // }
-
-  &__content {
+  &__container {
+    margin: 50px auto;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1000;
     width: 800px;
     height: 1374px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    text-align: center;
+    vertical-align: middle;
+
+    background-color: var(--bg-color);
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    // justify-content: center;
+    align-items: center;
 
     background: #171717;
     border-radius: 12px;
   }
 
   &__header {
+    padding: 29px 27px;
     max-width: 650px;
     height: 89px;
     left: 75px;
@@ -21,5 +45,13 @@
 
     background: rgba(230, 83, 60, 0.85);
     border-radius: 12px;
+  }
+
+  &__title {
+    font-weight: 600;
+    font-size: 29px;
+    line-height: 100%;
+
+    letter-spacing: 0.03em;
   }
 }
