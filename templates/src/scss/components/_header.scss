@@ -1,15 +1,32 @@
 .header {
-  position: absolute;
-  top: 28px;
-  left: 50%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
   width: 100%;
-  transform: translateX(-50%);
-  &__inner {
+  height: 110px;
+
+  background-color: var(--bg-color);
+
+  &__container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 0 15px;
+    width: 90%;
+    
   }
 
-  
+  &__logo {
+    @include desktop1144 {
+      display: none;
+    }
+
+    @include tablet900 {
+      display: block;
+    }
+  }
 }

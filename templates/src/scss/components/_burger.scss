@@ -1,0 +1,46 @@
+.burger {
+  display: none;
+  position: relative;
+  border: 1px solid var(--light-color);
+  border-radius: 10px;
+  width: 44px;
+  height: 44px;
+
+  @include tablet900 {
+    display: block;
+  }
+
+  &__line {
+    border-radius: 100px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 2px;
+    width: 26px;
+    transform: translateX(-50%);
+    background-color: var(--light-color);
+    transform: translateX(-50%) translateY(-50%);
+
+    &:first-child {
+      margin-top: -7px;
+    }
+
+    &:last-child {
+      margin-top: 7px;
+    }
+  }
+}
+
+.burger-close {
+  position: absolute;
+  top: 30px;
+  right: var(--container-offset);
+  border: 1px solid var(--light-color);
+  border-radius: 10px;
+  width: 44px;
+  height: 44px;
+  background-image: url("../img/svg/close.svg");
+  background-position: center;
+  background-size: 24px 24px;
+  background-repeat: no-repeat;
+}

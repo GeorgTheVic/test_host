@@ -2,6 +2,11 @@
   height: 100vh;
   min-height: 965px;
 
+  @include desktop1144 {
+    text-align: center;
+    min-height: 700px;
+  }
+
   &__inner {
     min-height: 965px;
     position: relative;
@@ -10,6 +15,11 @@
     flex-direction: column;
     justify-content: center;
     flex: 1;
+
+    @include tablet841 {
+      text-align: center;
+      min-height: 700px;
+    }
   }
 
   &__title {
@@ -22,16 +32,41 @@
     letter-spacing: -2px;
     text-transform: uppercase;
 
+    @include tablet841 {
+      font-size: 60px;
+    }
+
+    @include mobile {
+      font-size: 40px;
+      line-height: 50px;
+    }
+
     &-thin {
       font-weight: 400;
       font-size: 70px;
       line-height: 70px;
+
+      @include tablet841 {
+        font-size: 50px;
+      }
+
+      @include mobile {
+        font-size: 30px;
+      }
     }
 
     &-bold {
       font-weight: 700;
       font-size: 110px;
       line-height: 100%;
+
+      @include tablet841 {
+        font-size: 70px;
+      }
+
+      @include mobile {
+        font-size: 40px;
+      }
     }
   }
 
@@ -41,6 +76,15 @@
     line-height: 24px;
     letter-spacing: 0.5px;
     color: rgba(239, 237, 232, 0.65);
+
+    @include tablet841 {
+      margin-bottom: 30px;
+      line-height: 35px;
+    }
+
+    @include mobile {
+      line-height: 40px;
+    }
   }
 
   &__img {
@@ -48,5 +92,15 @@
     top: 100px;
     right: -10%;
     z-index: -5;
+
+    @include desktop1144 {
+      display: none;
+    }
+  }
+
+  &__btn {
+    @include desktop1144 {
+      align-self: center;
+    }
   }
 }
