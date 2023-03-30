@@ -6,6 +6,12 @@
   }
 }
 
+@mixin desktop1518 {
+  @media (max-width: (1518px)) {
+    @content;
+  }
+}
+
 @mixin desktop1144 {
   @media (max-width: (1144px)) {
     @content;
@@ -18,8 +24,20 @@
   }
 }
 
+@mixin desktop1300 {
+  @media (max-width: (1300px)) {
+    @content;
+  }
+}
+
 @mixin tablet {
   @media (max-width: (1024px)) {
+    @content;
+  }
+}
+
+@mixin tablet900 {
+  @media (max-width: (900px)) {
     @content;
   }
 }

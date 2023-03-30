@@ -22,31 +22,32 @@
 <body class="page__body">
   <div class="site-container">
     <header class="header">
-  <div class="container-fluid">
-    <div class="header__inner">
-      <div class="header__logo">
-        <a href="index.html" class="header__logo-link">
-          <picture>
-            <source srcset="img/Logo.avif" type="image/avif">
-            <source srcset="img/Logo.webp" type="image/webp">
-            <img loading="lazy" src="img/Logo.png" class="header__img" width="94" height="96" alt="Логотип">
-          </picture>
-        </a>
-      </div>
-      <nav class="nav" title="Main menu" data-menu>
-        <ul class="list-reset nav__list">
-          <li class="nav__item"><a href="#intro" class="nav__link">Главная</a></li>
-          <li class="nav__item"><a href="#profit" class="nav__link">Выгода инвестора</a></li>
-          <li class="nav__item"><a href="#process" class="nav__link">Процесс</a></li>
-          <li class="nav__item"><a href="#benefit" class="nav__link">Доходность</a></li>
-          <li class="nav__item"><a href="#about" class="nav__link">О нас</a></li>
-        </ul>
-      </nav>
-
-      <button class="btn-reset burger" aria-label="Открыть меню" aria-expanded="false"  data-burger>
-        <span class="burger__line"></span>
-      </button>
+  <div class="container-fluid header__container">
+    <div class="header__logo">
+      <a href="index.html" class="header__logo-link">
+        <picture>
+          <source srcset="img/Logo.avif" type="image/avif">
+          <source srcset="img/Logo.webp" type="image/webp">
+          <img loading="lazy" src="img/Logo.png" class="header__img" width="94" height="96" alt="Логотип">
+        </picture>
+      </a>
     </div>
+    <nav class="nav" title="Main menu" data-menu>
+      <ul class="list-reset nav__list">
+        <li class="nav__item"><a href="#intro" class="nav__link">Главная</a></li>
+        <li class="nav__item"><a href="#profit" class="nav__link">Выгода инвестора</a></li>
+        <li class="nav__item"><a href="#process" class="nav__link">Процесс</a></li>
+        <li class="nav__item"><a href="#benefit" class="nav__link">Доходность</a></li>
+        <li class="nav__item"><a href="#about" class="nav__link">О нас</a></li>
+      </ul>
+      <button class="btn-reset burger-close" data-graph-path="Закрыть меню"></button>
+    </nav>
+
+    <button class="btn-reset burger-close" aria-label="Открыть меню" aria-expanded="false" data-burger>
+      <span class="burger__line"></span>
+      <span class="burger__line"></span>
+      <span class="burger__line"></span>
+    </button>
   </div>
 </header>
     <main class="main">
