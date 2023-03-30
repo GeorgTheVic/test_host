@@ -2,343 +2,354 @@
 <html lang="ru" class="page">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <meta name="theme-color" content="#111111">
-  <title>Champion Gym Investment</title>
-  <link rel="preload" href="{{ url_for('static', filename='fonts/Inter-Regular.woff2') }}" as="font" type="font/woff2" crossorigin>
-  <link rel="preload" href="{{ url_for('static', filename='fonts/Inter-Medium.woff2') }}" as="font" type="font/woff2" crossorigin>
-  <link rel="preload" href="{{ url_for('static', filename='fonts/Inter-SemiBold.woff2') }}" as="font" type="font/woff2" crossorigin>
-  <link rel="preload" href="{{ url_for('static', filename='fonts/Inter-Bold.woff2') }}" as="font" type="font/woff2" crossorigin>
-  <link rel="preload" href="{{ url_for('static', filename='fonts/MontserratRegular.woff2') }}" as="font" type="font/woff2" crossorigin>
-  <link rel="preload" href="{{ url_for('static', filename='fonts/MontserratExtraBold.woff2') }}" as="font" type="font/woff2" crossorigin>
-  <link rel="stylesheet" href="{{ url_for('static', filename='css/vendor.css') }}">
-  <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
-  <script defer src="{{ url_for('static', filename='js/main.js') }}"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="theme-color" content="#111111">
+    <title>Champion Gym Investment</title>
+    <link rel="preload" href="{{ url_for('static', filename='fonts/Inter-Regular.woff2') }}" as="font" type="font/woff2"
+          crossorigin>
+    <link rel="preload" href="{{ url_for('static', filename='fonts/Inter-Medium.woff2') }}" as="font" type="font/woff2"
+          crossorigin>
+    <link rel="preload" href="{{ url_for('static', filename='fonts/Inter-SemiBold.woff2') }}" as="font"
+          type="font/woff2" crossorigin>
+    <link rel="preload" href="{{ url_for('static', filename='fonts/Inter-Bold.woff2') }}" as="font" type="font/woff2"
+          crossorigin>
+    <link rel="preload" href="{{ url_for('static', filename='fonts/MontserratRegular.woff2') }}" as="font"
+          type="font/woff2" crossorigin>
+    <link rel="preload" href="{{ url_for('static', filename='fonts/MontserratExtraBold.woff2') }}" as="font"
+          type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/vendor.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+    <script defer src="{{ url_for('static', filename='js/main.js') }}"></script>
 </head>
 
 <body class="page__body">
-  <div class="site-container">
+<div class="site-container">
     <header class="header">
-  <div class="container-fluid">
-    <div class="header__inner">
-      <div class="header__logo">
-        <a href="index.html" class="header__logo-link">
-          <picture>
-            <source srcset="{{ url_for('static', filename='img/logo.avif') }}" type="image/avif">
-            <source srcset="{{ url_for('static', filename='img/logo.webp') }}" type="image/webp">
-            <img loading="lazy" src="{{ url_for('static', filename='img/Logo.png') }}" class="header__img" width="94" height="96" alt="Логотип">
-          </picture>
-        </a>
-      </div>
-      <nav class="nav" title="Main menu">
-        <ul class="list-reset nav__list">
-          <li class="nav__item"><a href="#" class="nav__link">Главная</a></li>
-          <li class="nav__item"><a href="#" class="nav__link">Выгода инвестора</a></li>
-          <li class="nav__item"><a href="#" class="nav__link">Доходность</a></li>
-          <li class="nav__item"><a href="#" class="nav__link">Процесс</a></li>
-          <li class="nav__item"><a href="#" class="nav__link">О нас</a></li>
-        </ul>
-      </nav>
-    </div>
-  </div>
-</header>
+        <div class="container-fluid">
+            <div class="header__inner">
+                <div class="header__logo">
+                    <a href="{{ url_for('index') }}" class="header__logo-link">
+                        <picture>
+                            <source srcset="{{ url_for('static', filename='img/logo.avif') }}" type="image/avif">
+                            <source srcset="{{ url_for('static', filename='img/logo.webp') }}" type="image/webp">
+                            <img loading="lazy" src="{{ url_for('static', filename='img/Logo.png') }}"
+                                 class="header__img" width="94" height="96" alt="Логотип">
+                        </picture>
+                    </a>
+                </div>
+                <nav class="nav" title="Main menu">
+                    <ul class="list-reset nav__list">
+                        <li class="nav__item"><a href="#" class="nav__link">Главная</a></li>
+                        <li class="nav__item"><a href="#" class="nav__link">Выгода инвестора</a></li>
+                        <li class="nav__item"><a href="#" class="nav__link">Доходность</a></li>
+                        <li class="nav__item"><a href="#" class="nav__link">Процесс</a></li>
+                        <li class="nav__item"><a href="#" class="nav__link">О нас</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
     <main class="main">
-      <section class="intro">
-  <div class="container">
-    <div class="intro__inner">
-        <h1 class="intro__title">
-          Champion Gym<br>
-          <span class="intro__title-thin">
+        <section class="intro">
+            <div class="container">
+                <div class="intro__inner">
+                    <h1 class="intro__title">
+                        Champion Gym<br>
+                        <span class="intro__title-thin">
             Набирает
           </span>
-          <span class="intro__title-bold">
+                        <span class="intro__title-bold">
             Инвесторов
           </span>
-        </h1>
+                    </h1>
 
-        <p class="intro__text">
-          Я Артём Чернов, основатель сети фитнес-клубов Champion Gym.<br>
-          Привлекаю инвестиции на открытие ещё трех филиалов в этом году.
-        </p>
+                    <p class="intro__text">
+                        Я Артём Чернов, основатель сети фитнес-клубов Champion Gym.<br>
+                        Привлекаю инвестиции на открытие ещё трех филиалов в этом году.
+                    </p>
 
-      <button class="btn-reset btn intro__btn" data-graph-path="form">
-        Стать инвестором
-      </button>
+                    <button class="btn-reset btn intro__btn" data-graph-path="form">
+                        Стать инвестором
+                    </button>
 
-      <div class="intro__right">
-        <picture>
-          <source srcset="{{ url_for('static', filename='img/intro_bg_img.avif') }}" type="image/avif">
-          <source srcset="{{ url_for('static', filename='img/intro_bg_img.webp') }}" type="image/webp">
-          <img loading="lazy" src="{{ url_for('static', filename='img/intro_bg_img.png') }}" class="image" width="700" height="690" alt="Артём Чернов">
-        </picture>
+                    <picture>
+                        <source srcset="{{ url_for('static', filename='img/intro_bg_img.avif') }}" type="image/avif">
+                        <source srcset="{{ url_for('static', filename='img/intro_bg_img.webp') }}" type="image/webp">
+                        <img loading="lazy" src="{{ url_for('static', filename='img/intro_bg_img.png') }}"
+                             class="intro__img" width="700" height="690" alt="Артём Чернов">
+                    </picture>
 
-        <div class="label label-orange">
-          <p class="label__suptext">
-            Оборот за месяц
-          </p>
-          <p class="label__text-big">
-            {{ info.circulation }} <span class="label__text-small">млн ₸</span>
-          </p>
-        </div>
-        <div class="label label-gray">
-          <p class="label__text-gray">
-            10 000 +
-          </p>
-          <p class="label__subtext">
-            Клиентская база
-          </p>
-        </div>
-        <div class="label label-violet">
-          <p class="label__text label__text-violet">
-            40 +
-          </p>
-          <p class="label__subtext">
-            Сотрудников
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-      <section class="profit">
-  <div class="container">
-    <h2 class="profit__title">
-      Ожидаемая прибыль инвестора:
-    </h2>
+                    <div class="label label-orange">
+                        <p class="label__suptext">
+                            Оборот за месяц
+                        </p>
+                        <p class="label__text-big">
+                            {{ info.circulation }} <span class="label__text-small">млн ₸</span>
+                        </p>
+                    </div>
+                    <div class="label label-gray">
+                        <p class="label__text-gray">
+                            10 000 +
+                        </p>
+                        <p class="label__subtext">
+                            Клиентская база
+                        </p>
+                    </div>
+                    <div class="label label-violet">
+                        <p class="label__text label__text-violet">
+                            40 +
+                        </p>
+                        <p class="label__subtext">
+                            Сотрудников
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="profit">
+            <div class="container">
+                <h2 class="profit__title">
+                    Ожидаемая прибыль инвестора:
+                </h2>
 
-    <p class="profit__subtitle">
-      Рассчет основан на цифрах с действующих филиалов
-    </p>
+                <p class="profit__subtitle">
+                    Рассчет основан на цифрах с действующих филиалов
+                </p>
 
-    <div class="profit__inner">
-      <div class="card">
-        <p class="card__title">
-          С 1-го филиала:
-        </p>
+                <div class="profit__inner">
+                    <div class="card">
+                        <p class="card__title">
+                            С 1-го филиала:
+                        </p>
 
-        <p class="card__info">
-          1-1.5 миллиона ₸ в месяц
-        </p>
+                        <p class="card__info">
+                            1-1.5 миллиона ₸ в месяц
+                        </p>
 
-        <picture class="card__img" >
-          <source srcset="img/card/1_filial.avif" type="image/avif">
-          <source srcset="img/card/1_filial.webp" type="image/webp">
-          <img loading="lazy" src="img/card/1_filial.png"  width="51" height="58" alt="Золотые слитки">
-        </picture>
-      </div>
-      <div class="card card-dark">
-        <p class="card__title">
-          С 2-х филиалов:
-        </p>
+                        <picture class="card__img">
+                            <source srcset="{{ url_for('static', filename='img/card/1_filial.avif') }}"
+                                    type="image/avif">
+                            <source srcset="{{ url_for('static', filename='img/card/1_filial.webp') }}"
+                                    type="image/webp">
+                            <img loading="lazy" src="{{ url_for('static', filename='img/card/1_filial.png') }}"
+                                 width="51" height="58" alt="Золотые слитки">
+                        </picture>
+                    </div>
+                    <div class="card card-dark">
+                        <p class="card__title">
+                            С 2-х филиалов:
+                        </p>
 
-        <p class="card__info">
-          1.8-2.5 миллиона ₸ в месяц
-        </p>
+                        <p class="card__info">
+                            1.8-2.5 миллиона ₸ в месяц
+                        </p>
 
-        <picture class="card__img" >
-          <source srcset="img/card/2_filial.avif" type="image/avif">
-          <source srcset="img/card/2_filial.webp" type="image/webp">
-          <img loading="lazy" src="img/card/2_filial.png"  width="51" height="58" alt="Мешок с деньгами">
-        </picture>
-      </div>
-      <div class="card">
-        <p class="card__title">
-          С 3-х филиалов:
-        </p>
+                        <picture class="card__img">
+                            <source srcset="{{ url_for('static', filename='img/card/2_filial.avif') }}"
+                                    type="image/avif">
+                            <source srcset="{{ url_for('static', filename='img/card/2_filial.webp') }}"
+                                    type="image/webp">
+                            <img loading="lazy" src="{{ url_for('static', filename='img/card/2_filial.png') }}"
+                                 width="51" height="58" alt="Мешок с деньгами">
+                        </picture>
+                    </div>
+                    <div class="card">
+                        <p class="card__title">
+                            С 3-х филиалов:
+                        </p>
 
-        <p class="card__info">
-          2.5-3.5 миллиона ₸ в месяц
-        </p>
+                        <p class="card__info">
+                            2.5-3.5 миллиона ₸ в месяц
+                        </p>
 
-        <picture class="card__img" >
-          <source srcset="img/card/3_filial.avif" type="image/avif">
-          <source srcset="img/card/3_filial.webp" type="image/webp">
-          <img loading="lazy" src="img/card/3_filial.png"  width="70" height="70" alt="Мешки с деньгами">
-        </picture>
-      </div>
-    </div>
-  </div>
-</section>
-      <section class="process">
-  <div class="container">
-    <div class="process__inner">
-      <div class="process__left">
-        <h2 class="process__title">
-          Как все происходит:
-        </h2>
+                        <picture class="card__img">
+                            <source srcset="{{ url_for('static', filename='img/card/3_filial.avif') }}"
+                                    type="image/avif">
+                            <source srcset="{{ url_for('static', filename='img/card/3_filial.webp') }}"
+                                    type="image/webp">
+                            <img loading="lazy" src="{{ url_for('static', filename='img/card/3_filial.png') }}"
+                                 width="70" height="70" alt="Мешки с деньгами">
+                        </picture>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="process">
+            <div class="container">
+                <div class="process__inner">
+                    <div class="process__left">
+                        <h2 class="process__title">
+                            Как все происходит:
+                        </h2>
 
-        <p class="process__info">
-          Заключаем инвестиционный договор.
-          Вводим тебя в состав ТОО присваивая долю в бизнесе с капитализацией соразмерно инвестициям.
-        </p>
+                        <p class="process__info">
+                            Заключаем инвестиционный договор.
+                            Вводим тебя в состав ТОО присваивая долю в бизнесе с капитализацией соразмерно инвестициям.
+                        </p>
 
-      </div>
+                    </div>
 
-      <div class="process__right">
-        <picture>
-          <source srcset="img/process/contract.avif" type="image/avif">
-          <source srcset="img/process/contract.webp" type="image/webp">
-          <img loading="lazy" src="img/process/contract.jpg" class="process__img" width="640" height="539" alt="Договор">
-        </picture>
-      </div>
-    </div>
-  </div>
-</section>
-      <section class="investment">
-  <div class="container">
-    <div class="investment__inner">
-      <div class="investment__row">
-        <picture>
-          <source srcset="img/investment/investor.avif" type="image/avif">
-          <source srcset="img/investment/investor.webp" type="image/webp">
-          <img loading="lazy" src="img/investment/investor.png" class="investment__img" width="62" height="62" alt="Инвестор">
-        </picture>
-        <p class="investment__text">
-          Минимальная сумма инвестиций <strong>5 000 000</strong> ₸.
-        </p>
-      </div>
-      <div class="investment__row">
-        <picture>
-          <source srcset="img/investment/clock.avif" type="image/avif">
-          <source srcset="img/investment/clock.webp" type="image/webp">
-          <img loading="lazy" src="img/investment/clock.png" class="investment__img" width="62" height="62" alt="Часы">
-        </picture>
-        <p class="investment__text">
-          Открытие филиала будет происходить в течение 3-х месяцев.
-        </p>
-      </div>
-    </div>
-  </div>
-</section>
-      <section class="benefit">
-  <div class="container">
-    <div class="benefit__inner">
-      <div class="benefit__left">
-        <picture>
-          <source srcset="img/benefit/investor.avif" type="image/avif">
-          <source srcset="img/benefit/investor.webp" type="image/webp">
-          <img loading="lazy" src="img/benefit/investor.jpg" class="benefit__img" width="560" height="510"
-            alt="Инвестор">
-        </picture>
-      </div>
+                    <div class="process__right">
+                        <picture>
+                            <source srcset="{{ url_for('static', filename='img/process/contract.avif') }}"
+                                    type="image/avif">
+                            <source srcset="{{ url_for('static', filename='img/process/contract.webp') }}"
+                                    type="image/webp">
+                            <img loading="lazy" src="{{ url_for('static', filename='img/process/contract.jpg') }}"
+                                 class="process__img" width="640" height="539" alt="Договор">
+                        </picture>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="investment">
+            <div class="container">
+                <div class="investment__inner">
+                    <div class="investment__row">
+                        <picture>
+                            <source srcset="{{ url_for('static', filename='img/investment/investor.avif') }}"
+                                    type="image/avif">
+                            <source srcset="{{ url_for('static', filename='img/investment/investor.webp') }}"
+                                    type="image/webp">
+                            <img loading="lazy" src="{{ url_for('static', filename='img/investment/investor.png') }}"
+                                 class="investment__img" width="62" height="62" alt="Инвестор">
+                        </picture>
+                        <p class="investment__text">
+                            Минимальная сумма инвестиций <strong>5 000 000</strong> ₸.
+                        </p>
+                    </div>
+                    <div class="investment__row">
+                        <picture>
+                            <source srcset="{{ url_for('static', filename='img/investment/clock.avif') }}"
+                                    type="image/avif">
+                            <source srcset="{{ url_for('static', filename='img/investment/clock.webp') }}"
+                                    type="image/webp">
+                            <img loading="lazy" src="{{ url_for('static', filename='img/investment/clock.png') }}"
+                                 class="investment__img" width="62" height="62" alt="Часы">
+                        </picture>
+                        <p class="investment__text">
+                            Открытие филиала будет происходить в течение 3-х месяцев.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="benefit">
+            <div class="container">
+                <div class="benefit__inner">
+                    <div class="benefit__left">
+                        <picture>
+                            <source srcset="{{ url_for('static', filename='img/benefit/investor.avif') }}"
+                                    type="image/avif">
+                            <source srcset="{{ url_for('static', filename='img/benefit/investor.webp') }}"
+                                    type="image/webp">
+                            <img loading="lazy" src="{{ url_for('static', filename='img/benefit/investor.jpg') }}"
+                                 class="benefit__img" width="560" height="510"
+                                 alt="Инвестор">
+                        </picture>
+                    </div>
 
-      <div class="benefit__right">
-        <h2 class="benefit__title">
-          Выгода инвестора
-        </h2>
+                    <div class="benefit__right">
+                        <h2 class="benefit__title">
+                            Выгода инвестора
+                        </h2>
 
-        <p class="benefit__info">
-          Инвестор вкладывает 95 000 000 ₸ инвестиций и получает долю 10% во владение с капитализацией (доля в следующих трёх филиалах).
-        </p>
-      </div>
-    </div>
-  </div>
-</section>
-      <section class="about">
-  <div class="container">
-    <div class="about__inner">
-      <h2 class="about__title">
-        О нас
-      </h2>
+                        <p class="benefit__info">
+                            Инвестор вкладывает 95 000 000 ₸ инвестиций и получает долю 10% во владение с капитализацией
+                            (доля в следующих трёх филиалах).
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="about">
+            <div class="container">
+                <div class="about__inner">
+                    <h2 class="about__title">
+                        О нас
+                    </h2>
 
-      <div class="about__wrapper">
-        <p class="about__text">
-          Количество действующих на данный момент филиалов <span>2</span>
-        </p>
-        <p class="about__text">
-          Количество сотрудников <span>40</span>+
-        </p>
-        <p class="about__text">
-          Месячный оборот компании <span>35-45 миллионов</span>
-        </p>
-        <p class="about__text">
-          Дата открытия <span>2018 год</span>
-        </p>
-        <p class="about__text">
-          Наша <span>клиентская база:</span> 10 000+ человек. И более 2000 активных клиентов
-        </p>
-        <p class="about__text">
-          Мы имеем <span>сильную команду</span> и управленческий состав
-        </p>
-      </div>
-    </div>
-  </div>
-</section>
+                    <div class="about__wrapper">
+                        <p class="about__text">
+                            Количество действующих на данный момент филиалов <span>2</span>
+                        </p>
+                        <p class="about__text">
+                            Количество сотрудников <span>40</span>+
+                        </p>
+                        <p class="about__text">
+                            Месячный оборот компании <span>35-45 миллионов</span>
+                        </p>
+                        <p class="about__text">
+                            Дата открытия <span>2018 год</span>
+                        </p>
+                        <p class="about__text">
+                            Наша <span>клиентская база:</span> 10 000+ человек. И более 2000 активных клиентов
+                        </p>
+                        <p class="about__text">
+                            Мы имеем <span>сильную команду</span> и управленческий состав
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 
     <footer class="footer">
-  <div class="container">
-    <button class="btn-reset btn intro__btn" data-graph-path="form">
-      Стать инвестором
-    </button>
-  </div>
-</footer>
+        <div class="container">
+            <button class="btn-reset btn intro__btn" data-graph-path="form">
+                Стать инвестором
+            </button>
+        </div>
+    </footer>
 
     <div class="graph-modal">
-  <div class="graph-modal__container" role="dialog" aria-modal="true" data-graph-target="form">
-    <!-- <button class="btn-reset js-modal-close graph-modal__close" aria-label="Закрыть модальное окно">
+        <div class="graph-modal__container" role="dialog" aria-modal="true" data-graph-target="form">
+            <!-- <button class="btn-reset js-modal-close graph-modal__close" aria-label="Закрыть модальное окно">
 
-    </button> -->
-    <div class="graph-modal__wrapper">
-      <div class="graph-modal__header">
-        <h3 class="graph-modal__title">
-          Квалифицирующая анкета инвестора
-        </h3>
-      </div>
-      <div class="graph-modal__content">
-        <form method="POST" action="#" class="form">
-          <p class="form__caption">
-            Имя
-          </p>
-          <label class="form__label">
-            <input type="text" name="Имя" class="input-reset form__input" placeholder="Введите ответ здесь">
-          </label>
-          <p class="form__caption">
-            Номер телефона
-          </p>
-          <label class="form__label">
-            <input type="text" name="Имя" class="input-reset form__input" placeholder="Введите ответ здесь">
-          </label>
-          <p class="form__caption">
-            Возраст
-          </p>
-          <label class="form__label">
-            <input type="text" name="Имя" class="input-reset form__input" placeholder="Введите ответ здесь">
-          </label>
-          <p class="form__caption">
-            Есть ли опыт инвестирования?
-          </p>
-          <label class="form__label">
-            <input type="text" name="Имя" class="input-reset form__input" placeholder="Введите ответ здесь">
-          </label>
-          <p class="form__caption">
-            Почему именно фитнес?
-          </p>
-          <label class="form__label">
-            <input type="text" name="Имя" class="input-reset form__input" placeholder="Введите ответ здесь">
-          </label>
-          <p class="form__caption">
-            Есть ли действующий бизнес?
-          </p>
-          <label class="form__label">
-            <input type="text" name="Имя" class="input-reset form__input" placeholder="Введите ответ здесь">
-          </label>
-          <p class="form__caption">
-            Осведомлены ли, что минимально возможная покупка это 1% доли?
-          </p>
-          <label class="form__label">
-            <input type="text" name="Имя" class="input-reset form__input" placeholder="Введите ответ здесь">
-          </label>
-          <button type="submit" class="btn-reset btn form__btn">Отправить</button>
-        </form>
-      </div>
+            </button> -->
+            <div class="graph-modal__wrapper">
+                <div class="graph-modal__header">
+                    <h3 class="graph-modal__title">
+                        Квалифицирующая анкета инвестора
+                    </h3>
+                </div>
+                <div class="graph-modal__content">
+                    <form method="POST" action="#" class="form">
+                        {{ form.csrf_token }}
+                        {{ form.hidden_tag() }}
+                        {% for field in form %}
+                            {% if field.name == "submit" %}
+                                {{ field(class="btn-reset btn form__btn") }}
+                            {% else %}
+                                {% if field.name == "csrf_token" %}
+                                {% else %}
+                                    <p class="form__caption">
+                                        {{ field.label }}
+                                    </p>
+                                {% endif %}
+                                <label class="form__label">
+                                    {% if field.errors %}
+                                        {{ field(class="input-reset form__input") }}
+                                        <div class="invalid-feedback">
+                                            {% for error in field.errors %}
+                                                <span>{{ error }}</span>
+                                            {% endfor %}
+                                        </div>
+                                    {% else %}
+                                        {{ field(class="input-reset form__input", placeholder="Введите ответ здесь") }}
+                                    {% endif %}
+                                </label>
+                            {% endif %}
+                        {% endfor %}
+                    </form>
+                </div>
+            </div>
+        </div>
     </div>
-  </div>
 </div>
-  </div>
 </body>
 
 </html>
