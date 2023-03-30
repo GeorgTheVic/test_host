@@ -1,11 +1,17 @@
 .nav {
-  width: 65%;
+  width: 100%;
+
+  @include desktop1144 {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+  }
+
 
   &__list {
     display: flex;
-    justify-content: space-between;
-
-    
+    justify-content: space-around;
+    min-width: 900px;
   }
 
   &__link {

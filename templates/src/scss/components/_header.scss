@@ -1,6 +1,8 @@
 .header {
+  display: flex;
+  align-items: center;
   position: fixed;
-  top: 28px;
+  top: 0;
   left: 50%;
   z-index: 10;
   width: 100%;
@@ -9,15 +11,11 @@
 
   background-color: var(--bg-color);
 
-  @include desktop1144 {
-    width: 70%;
-  }
-
   &__inner {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 0 15px;
+    width: 100%;
 
     @include desktop1144 {
       justify-content: center;
