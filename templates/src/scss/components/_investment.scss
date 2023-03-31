@@ -2,14 +2,11 @@
   display: flex;
   align-items: center;
   width: 100%;
-  height: 400px;
-
-
+  min-height: 400px;
 
   &__inner {
     display: flex;
     flex-direction: column;
-
   }
 
   &__row {
@@ -23,6 +20,10 @@
 
   &__img {
     margin-right: 32px;
+
+    @include tablet900 {
+      display: none;
+    }
   }
 
   &__text {

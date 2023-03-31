@@ -39,8 +39,12 @@
   border-radius: 10px;
   width: 44px;
   height: 44px;
-  background-image: url("../img/svg/close.svg");
+  background-image: url(../img/svg/close.svg);
   background-position: center;
   background-size: 24px 24px;
   background-repeat: no-repeat;
+
+  @include tablet900min {
+    display: none;
+  }
 }

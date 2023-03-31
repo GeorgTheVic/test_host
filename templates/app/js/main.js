@@ -195,6 +195,7 @@ __webpack_require__.r(__webpack_exports__);
   const menu = document?.querySelector('[data-menu]');
   const menuItems = document?.querySelectorAll('[data-menu-item]');
   const overlay = document?.querySelector('[data-menu-overlay]');
+  const closeBtn = document?.querySelector('[data-menu-close]');
   burger?.addEventListener('click', e => {
     burger?.classList.toggle('burger--active');
     menu?.classList.toggle('menu--active');
@@ -207,6 +208,13 @@ __webpack_require__.r(__webpack_exports__);
       burger?.setAttribute('aria-label', 'Открыть меню');
       (0,_functions_enable_scroll__WEBPACK_IMPORTED_MODULE_1__.enableScroll)();
     }
+  });
+  closeBtn?.addEventListener('click', () => {
+    burger?.setAttribute('aria-expanded', 'false');
+    burger?.setAttribute('aria-label', 'Открыть меню');
+    burger.classList.remove('burger--active');
+    menu.classList.remove('menu--active');
+    (0,_functions_enable_scroll__WEBPACK_IMPORTED_MODULE_1__.enableScroll)();
   });
   overlay?.addEventListener('click', () => {
     burger?.setAttribute('aria-expanded', 'false');

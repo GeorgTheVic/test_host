@@ -1,5 +1,5 @@
 .process {
-  height: 600px;
+  min-height: 600px;
   width: 100%;
   display: flex;
   align-items: center;
@@ -14,10 +14,18 @@
     width: 47%;
 
     align-items: center;
+
+    @include tablet {
+      width: 100%;
+    }
   }
 
   &__right {
     width: 47%;
+
+    @include tablet {
+      display: none;
+    }
   }
 
   &__title {
@@ -27,6 +35,10 @@
     line-height: 50px;
 
     letter-spacing: 0.3px;
+
+    @include mobile {
+      font-size: 30px;
+    }
   }
 
   &__info {
@@ -37,5 +49,9 @@
 
     color: rgba(239, 237, 232, 0.65);
     text-align: justify;
+
+    @include mobile {
+      font-size: 22px;
+    }
   }
 }

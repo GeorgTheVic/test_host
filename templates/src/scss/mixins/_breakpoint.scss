@@ -36,6 +36,12 @@
   }
 }
 
+@mixin tablet900min {
+  @media (min-width: (900px)) {
+    @content;
+  }
+}
+
 @mixin tablet900 {
   @media (max-width: (900px)) {
     @content;
