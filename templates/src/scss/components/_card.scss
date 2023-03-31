@@ -1,6 +1,7 @@
 .card {
   display: flex;
   flex-direction: column;
+  margin: 0 10px 20px;
   padding: 65px 55px 35px;
   width: 304px;
   height: 342px;
@@ -31,6 +32,10 @@
 
   &__img {
     align-self: center;
+
+    @include mobile {
+      display: none;
+    }
   }
 
   &:last-child {
