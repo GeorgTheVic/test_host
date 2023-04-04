@@ -1,13 +1,11 @@
 from flask_wtf import FlaskForm
 from wtforms import StringField, IntegerField, SubmitField
-from wtforms.validators import DataRequired, Length, Email
+from wtforms.validators import DataRequired
 
 
 class ContactForm(FlaskForm):
     name = StringField("Имя", validators=[DataRequired()])
-    phone = IntegerField(
-        "Номер телефона", validators=[DataRequired(), Length(min=11, max=12)]
-    )
+    phone = StringField("Номер телефона", validators=[DataRequired()])
     age = IntegerField("Возраст", validators=[DataRequired()])
     investing_exp = StringField(
         "Есть ли опыт инвестирования?", validators=[DataRequired()]

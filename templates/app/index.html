@@ -263,7 +263,8 @@
                         </h2>
 
                         <p class="benefit__info">
-                            Инвестор вкладывает 95 000 000 ₸ инвестиций и получает долю 10% во владение с капитализацией
+                            Инвестор вкладывает 95&nbsp;000&nbsp;000&nbsp;₸ инвестиций и получает долю 10% во владение
+                            с капитализацией
                             (доля в следующих трёх филиалах).
                         </p>
                     </div>
@@ -322,7 +323,7 @@
                     </h3>
                 </div>
                 <div class="graph-modal__content">
-                    <form method="POST" action="#" class="form">
+                    <form method="POST" action="{{ url_for('index') }}" class="form">
                         {{ form.csrf_token }}
                         {{ form.hidden_tag() }}
                         {% for field in form %}
@@ -356,5 +357,12 @@
     </div>
 </div>
 </body>
+<script src="https://unpkg.com/imask"></script>
+<script>
+    let phoneMask = IMask(
+        document.getElementById('phone'), {
+            mask: '+{7}(000)000-00-00'
+        });
+</script>
 
 </html>
