@@ -1,0 +1,14 @@
+.goal {
+  margin: 60px auto;
+  width: 100%;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__text {
+    font-weight: normal;
+    font-size: 50px;
+    text-align: center;
+  }
+}

@@ -4,6 +4,14 @@
   min-height: 600px;
   width: 100%;
 
+  @include for-desktop1025max {
+    display: flex;
+    align-items: center;
+    margin-top: 100px;
+    width: 100%;
+    text-align: center;
+  }
+
   &__inner {
     display: flex;
     justify-content: space-between;
@@ -47,6 +55,11 @@
 
     color: rgba(239, 237, 232, 0.65);
     text-align: justify;
+    
+
+    @include for-desktop1025max {
+      text-align: center;
+    }
 
     @include tablet {
       font-size: 26px;

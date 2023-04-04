@@ -35,5 +35,11 @@
 
     color: rgba(239, 237, 232, 0.65);
     text-align: center;
+
+    @include for-desktop1025max {
+      margin-bottom: 50px;
+      color: rgba(239, 237, 232, 0.65);
+      text-align: center;
+    }
   }
 }

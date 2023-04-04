@@ -1,7 +1,6 @@
 .about {
   display: flex;
   align-items: center;
-  padding: 100px 0;
 
   &__inner {
     display: flex;
@@ -43,8 +42,8 @@
   &__text {
     margin-bottom: 30px;
     font-weight: 300;
-    font-size: 30px;
     line-height: 50px;
+
 
     & span {
       font-weight: 700;
@@ -54,5 +53,10 @@
       font-size: 20px;
       text-align: justify;
     } 
+
+    @include for-desktop1025max {
+      font-size: 20px;
+      text-align: center;  
+    }
   }
 }

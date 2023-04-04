@@ -1,10 +1,10 @@
 .intro {
+  margin: 40px auto;
   height: 100vh;
-  min-height: 965px;
+  height: 965px;
 
   @include desktop1144 {
     text-align: center;
-    min-height: 800px;
   }
 
   &__inner {

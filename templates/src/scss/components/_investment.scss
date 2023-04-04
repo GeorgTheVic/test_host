@@ -1,8 +1,10 @@
 .investment {
+  margin: 50px auto;
   display: flex;
   align-items: center;
   width: 100%;
-  min-height: 400px;
+  height: 400px;
+
 
   &__inner {
     display: flex;
