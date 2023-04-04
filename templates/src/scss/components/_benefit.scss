@@ -1,10 +1,20 @@
 .benefit {
+  margin: 50px auto;
   display: flex;
   align-items: center;
-  min-height: 600px;
+  height: 600px;
   width: 100%;
 
+  @include for-desktop1025max {
+    display: flex;
+    align-items: center;
+    margin-top: 100px;
+    width: 100%;
+    text-align: center;
+  }
+
   &__inner {
+    margin-bottom: 50px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -40,16 +50,26 @@
   }
 
   &__info {
-    font-size: 36px;
+    font-size: 30px;
     line-height: 150%;
 
     letter-spacing: 0.3px;
 
     color: rgba(239, 237, 232, 0.65);
     text-align: justify;
+    
+
+    @include for-desktop1025max {
+      text-align: center;
+    }
 
     @include tablet {
       font-size: 26px;
     }
+  }
+
+  &__caption {
+    text-align: center;
+    font-size: 30px;
   }
 }

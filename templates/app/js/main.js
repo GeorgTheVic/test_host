@@ -11,6 +11,9 @@
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_modal__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./components/modal */ "./src/js/components/modal.js");
 /* harmony import */ var _components_scroll__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/scroll */ "./src/js/components/scroll.js");
+/* harmony import */ var _components_mask__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/mask */ "./src/js/components/mask.js");
+/* harmony import */ var _components_mask__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_components_mask__WEBPACK_IMPORTED_MODULE_2__);
+
 
 
 
@@ -146,6 +149,18 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _vendor_focus_visible_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./vendor/focus-visible.js */ "./src/js/vendor/focus-visible.js");
 /* harmony import */ var _vendor_focus_visible_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_vendor_focus_visible_js__WEBPACK_IMPORTED_MODULE_0__);
 
+
+/***/ }),
+
+/***/ "./src/js/components/mask.js":
+/*!***********************************!*\
+  !*** ./src/js/components/mask.js ***!
+  \***********************************/
+/***/ (() => {
+
+let phoneMask = IMask(document.getElementById('phone'), {
+  mask: '+{7}(000)000-00-00'
+});
 
 /***/ }),
 

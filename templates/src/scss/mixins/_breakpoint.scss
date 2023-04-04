@@ -6,6 +6,12 @@
   }
 }
 
+@mixin for-desktop1025max {
+  @media (max-width: (1025px)) {
+    @content;
+  }
+}
+
 @mixin desktop1518 {
   @media (max-width: (1518px)) {
     @content;
